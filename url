@@ -1,0 +1,52 @@
+{
+
+
+user:{
+create user          http://localhost:3000/users/signup/                POST                body-raw-json  {email , password}
+login user           http://localhost:3000/users/login/                 POST                body-raw-json  {email , password}
+get all users        http://localhost:3000/users/                       GET
+get a user           http://localhost:3000/users/userId                 GET
+Delete a user        http://localhost:3000/users/userId                 DELETE
+
+
+}
+
+product:{
+all products         http://localhost:3000/products/                    GET
+single product       http://localhost:3000/products/productId           GET 
+add product          http://localhost:3000/products/                    POST                 dody-form-data {name ,price , productImage}
+delete product       http://localhost:3000/products/productId           DELETE
+update product       http://localhost:3000/products/productId           PATCH                body-raw-json  [ {"propName":" " , "value":" "}]
+}
+
+
+orders:{
+
+all orders           http://localhost:300/orders/                       GET         
+single order         http://localhost:300/orders/orderId                GET
+create order         http://localhost:300/orders/                       POST                 body-raw-json  {productId ,quantity}
+delete order         http://localhost:300/orders/orderId                DELETE
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

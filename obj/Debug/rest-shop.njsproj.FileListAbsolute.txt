@@ -1,0 +1,3 @@
+C:\Users\HP\source\repos\rest-shop\obj\Debug\rest-shop.njsprojAssemblyReference.cache
+C:\Users\HP\source\repos\rest-shop\obj\Debug\rest-shop.njsproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\rest-shop\bin\Microsoft.NodejsTools.WebRole.dll
