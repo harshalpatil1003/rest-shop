@@ -6,8 +6,9 @@ const bodyParser = require('body-parser');
 const mongoose = require("mongoose");
 
 
-mongoose.connect(
-    "mongodb+srv://rest-shop:" + process.env.MONGO_ATLAS_PW + "@rest-shop-2mate.mongodb.net/<dbname>?retryWrites=true&w=majority");
+mongoose.connect( 
+"mongodb+srv://rest-shop:" + process.env.MONGO_ATLAS_PW + "@cluster0.2mate.mongodb.net/rest-shop?retryWrites=true&w=majority");
+
 
 
 
