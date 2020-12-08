@@ -20,6 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 
+
 app.use((req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header(
@@ -35,6 +36,21 @@ app.use((req, res, next) => {
     next();
 
 });
+
+
+
+
+app.use('/harshal',(req,res,next)=>{
+    fs.readFile('./timer.html', function (err, html) {
+        if (err) throw err;  
+        
+            res.writeHeader(200, {"Content-Type": "text/html"});  
+            res.write(html);  
+            res.end();  
+       
+    });
+});
+
 
 
 
