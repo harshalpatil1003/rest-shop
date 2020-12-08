@@ -7,7 +7,8 @@ const mongoose = require("mongoose");
 
 
 mongoose.connect(
-    "mongodb+srv://rest-shop:" + process.env.MONGO_ATLAS_PW + "@rest-shop-2mate.mongodb.net/<dbname>?retryWrites=true&w=majority");
+    "mongodb://rest-shop:<password>@cluster0-shard-00-00.2mate.mongodb.net:27017,cluster0-shard-00-01.2mate.mongodb.net:27017,
+    cluster0-shard-00-02.2mate.mongodb.net:27017/<dbname>?ssl=true&replicaSet=atlas-5sj2qv-shard-0&authSource=admin&retryWrites=true&w=majority");
 
 
 const productRoutes = require('./api/routes/products')
